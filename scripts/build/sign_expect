@@ -6,7 +6,6 @@
 
 set password [lindex $argv 0]
 set files [lindex $argv 1]
-cd dist
 spawn rpm --addsign $files
 expect "Enter pass phrase:"
 send -- "$password\r"
