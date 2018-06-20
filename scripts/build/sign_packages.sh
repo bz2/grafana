@@ -6,4 +6,4 @@ gpg --allow-secret-key-import --import ~/private-repo/signing/private.key
 
 cp ./scripts/build/rpmmacros ~/.rpmmacros
 
-./scripts/build/sign_expect $GPG_KEY_PASSWORD dist/*.rpm
+./scripts/build/sign_expect $GPG_KEY_PASSWORD "dist/*.rpm"
