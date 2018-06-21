@@ -8,5 +8,5 @@ cp ./scripts/build/rpmmacros ~/.rpmmacros
 
 for package in dist/*.rpm; do
     [ -e "$package" ] || continue
-    ./scripts/build/sign_expect $GPG_KEY_PASSWORD "dist/"$package".rpm"
+    ./scripts/build/sign_expect $GPG_KEY_PASSWORD "dist/"$package
 done
